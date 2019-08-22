@@ -1,68 +1,31 @@
-# Bleda
+# DevConZm Blog
 
-> A blog starter theme for [Gridsome](https://gridsome.org), inspired by the [Attila](https://github.com/zutrinken/attila) Ghost theme and styled with [Tailwind CSS](https://tailwindcss.com).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9abde3fa-0bb3-4657-81d4-8a2629d95c2b/deploy-status)](https://app.netlify.com/sites/blog-devcon/deploys)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cossssmin/gridsome-starter-bleda)
-
-## Demo
-
-- [Page](https://gridsome-starter-bleda.netlify.com/about/)
-- [Single post](https://gridsome-starter-bleda.netlify.com/getting-started-with-gridsome-and-bleda/)
-- [Blog archive](https://gridsome-starter-bleda.netlify.com/)
-- [Tags archive](https://gridsome-starter-bleda.netlify.com/tag/getting-started/)
-- [Author archive](https://gridsome-starter-bleda.netlify.com/author/gridsome/)
-
-## Preview
-
-![Bleda starter for Gridsome devices preview](https://res.cloudinary.com/cossssmin/image/upload/v1551618609/os/gridsome/bleda/bleda-screenshot-devices.jpg)
-
-## Features
-
-- Sitemap
-- RSS Feed
-- Google Analytics
-- Custom 404 Page
-- Open Graph meta tags
-- Code syntax highlighting
-- Parallax post image covers
-- Option for fullscreen covers
-- Medium-like image lightbox
-- Taxonomies: Tags and Authors
-- Aproximate read time for posts
-- Post excerpts: automatic or user-defined
-- **Paginated** [blog](https://gridsome-starter-bleda.netlify.com/2/), [tag](https://gridsome-starter-bleda.netlify.com/tag/dummy/), and [author](https://gridsome-starter-bleda.netlify.com/author/gridsome/) archives
-- Easily show post dates in your locale (moment.js)
-- Posts show a warning if they're older than 1 year (configurable)
-
-## Installation
-
-It's recommended that you install Bleda with the `gridsome create` command, so that Gridsome removes the `.git` folder and installs NPM dependencies for you: 
-
-```sh 
-gridsome create my-website https://github.com/cossssmin/gridsome-starter-bleda.git
-```
-
-Alternatively, you can clone this repo and set it up manually:
-
-```sh 
-git clone https://github.com/cossssmin/gridsome-starter-bleda.git my-website
-
-# navigate to the directory
-cd my-website
-
-# remove the Git folder
-rm -rf .git
-
-# install NPM dependencies
-npm install
-```
-
-## Configuration
-
-See the [configuration notes](https://gridsome-starter-bleda.netlify.com/getting-started-with-gridsome-and-bleda/#configuration) in the Getting Started demo post.
+> A blog for [DevCon Zambia](https://devcon.co.zm) 
 
 ## Development
 
 Run `gridsome develop` to start a local development server, or `gridsome build` to build the static site into the `dist` folder.
 
 See the [Gridsome docs](https://gridsome.org/docs) for more information.
+
+or reference [this guide]() to get an overview of how to contribute to this project.
+
+# Creating a New Post 
+
+Go to the content folder and make a new markdown file - `.md`
+Be sure to start the post with this
+```yaml
+---
+title: "Post title" # required
+slug: post-title-custom-url # optional, override the auto-generated post slug
+description: "Lorem ipsum description sit amet" # required, used in meta tags and RSS feed
+date: 2019-03-01 17:54:43 # required; time is optional, but recommended for the <time> tag and better post sorting control
+author: bleda # optional
+tags: ['markdown', 'design'] # optional
+cover: https://example.com/path/to/cover/image.jpg # optional parallax post cover image
+fullscreen: false # optional - when `true`, makes parallax cover image take up full viewport height
+excerpt: "Custom excerpt to show in archive pages" # optional
+---
+```
